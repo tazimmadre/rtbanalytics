@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
-  title = 'rtb';
+export class HomeComponent implements OnInit {
+
+  constructor() { }
+
   ngOnInit() {  
     this.loadJsFile("assets/main.js"); 
     this.loadJsFile("assets/particles.js");  
@@ -27,4 +28,6 @@ export class AppComponent {
     node.type = 'text/javascript';  
     document.getElementsByTagName('head')[0].appendChild(node);  
   } 
+
+
 }

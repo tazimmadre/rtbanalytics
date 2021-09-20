@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-contactus',
+  templateUrl: './contactus.component.html',
+  styleUrls: ['./contactus.component.css']
 })
-export class AppComponent {
-  title = 'rtb';
+export class ContactusComponent implements OnInit {
+
+  constructor() { }
+
   ngOnInit() {  
     this.loadJsFile("assets/main.js"); 
     this.loadJsFile("assets/particles.js");  

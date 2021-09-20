@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-
+import { Component} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class AppComponent {
-  title = 'rtb';
+export class HeaderComponent  {
+
+  constructor() { }
+
   ngOnInit() {  
     this.loadJsFile("assets/main.js"); 
     this.loadJsFile("assets/particles.js");  

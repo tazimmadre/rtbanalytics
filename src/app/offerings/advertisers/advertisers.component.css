@@ -1,0 +1,269 @@
+.advertiser-new-section .advertiser-img-div {
+  width: 700px;
+  height: 400px;
+  background: url(/assets/advertiserpageimg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.advertiser-new-section .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advertiser-new-section .card-heading {
+  color: #0a81ab;
+}
+
+.advertiser-new-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background: #eff0f8;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+.advertiser-new-section .svg-mid {
+  justify-content: center;
+}
+
+.feature {
+  /* background: #3ec1d3; */
+  width: 100%;
+  min-height: 100vh;
+  /* padding: 50px; */
+  background: #eff0f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feature .main-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.feature .container {
+  /* flex: 1; */
+  position: relative;
+  top: 50%;
+}
+
+.feature .card-body .svg-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feature h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.feature .card-title {
+  text-align: center;
+  color: #0a81ab;
+}
+
+.feature .card-text {
+  text-align: center;
+}
+.feature .card {
+  text-align: center;
+  height: 240.8px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.7);
+  position: relative;
+  transition: 0.2s;
+  cursor: default;
+}
+.feature .card:hover {
+  box-shadow: 0px 10px 15px rgba(128, 128, 128, 0.7);
+  transform: translate(0%, -10px) rotateX(10deg);
+}
+.feature .card .card-text {
+  color: #19191b;
+}
+
+.audience-targeting {
+  min-height: 100vh;
+  width: 100%;
+  background: #ffd460;
+  overflow: auto;
+}
+.audience-targeting .main-heading {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.icon-container .icon svg {
+  width: 55px;
+  height: 55px;
+}
+
+.audience-targeting .targeting-word {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.homepara .small-highlight-text {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.homepara .highlight-text {
+  font-weight: bolder;
+  cursor: pointer;
+  color: #fff;
+  font-size: 4.5rem;
+}
+
+.audience-targeting .icon-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.audience-targeting .text {
+  text-align: center;
+  color: #19191b;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.advertiser-last-section {
+  /* min-height: 100vh; */
+  min-height: auto;
+  padding: 70px 0;
+  /* padding: 150px; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+  background: #eff0f8;
+  /* background: #ffd460; */
+  /* background: #fff; */
+  /* background: url(../images/contactusimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 40%; */
+}
+/* .analytics-third-section .container{
+    padding: 20px;
+    background: #000;
+    border-radius: 10px;
+  } */
+/* .analytics-third-section .main-heading{
+    text-align: center;
+    color: #283c63;
+    font-weight: bold;
+    font-size: 3rem;
+  
+  } */
+
+.advertiser-last-section .last-section-written-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.advertiser-last-section .last-section-written-section h5 {
+  color: #0a81ab;
+  text-align: center;
+  margin-top: 30px;
+}
+.advertiser-last-section .last-section-written-section h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.advertiser-last-section .last-section-written-section p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.advertiser-last-section .lets-talk-btn {
+  margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+  .homepara h1 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .homepara .highlight-text {
+    font-size: 2rem;
+  }
+  .feature .main-heading {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .feature h5 {
+    font-size: 1.2rem;
+  }
+  .audience-targeting .main-heading {
+    font-weight: 1.5rem;
+  }
+  .feature p {
+    font-size: 0.8rem;
+  }
+  .feature .card {
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .audience-targeting .text {
+    font-size: 0.5rem;
+  }
+  .icon-container .icon svg {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar .nav-item {
+    background: #19191b;
+    text-align: center;
+  }
+  .advertiser-new-section .advertiser-img-div {
+    width: 320px;
+    height: 250px;
+  }
+  .advertiser-last-section .img-responsive img {
+    width: 250px;
+    height: 250px;
+  }
+  .advertiser-last-section .img-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html {
+    font-size: 80%;
+  }
+  .advertiser-new-section .advertiser-img-div {
+    margin-bottom: 2rem !important;
+  }
+  .advertiser-new-section .card-heading {
+    font-size: 2rem !important;
+  }
+  .advertiser-new-section .card-para {
+    font-size: 1rem !important;
+  }
+  .feature .main-heading {
+    font-size: 2.5rem !important;
+    margin: 5rem 0px 0px 0px !important;
+  }
+  .feature .card-title {
+    font-size: 2rem !important;
+  }
+  .feature .card-text {
+    font-size: 1.2rem !important;
+  }
+}

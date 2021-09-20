@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/glacial-indifference"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/cookie.js"></script>
+    <style type="text/css">
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+        }
+
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
+
+
+    <script>
+        function changeForm(e) {
+
+            let formDiv = document.querySelectorAll('.form-div-block');
+            let ele = document.querySelectorAll(`.${e.target.value}`);
+
+            let checkboxClass = e.target.value.split("-")[0] + "-checkbox";
+
+            let formCheckbox = document.querySelectorAll('.form-checkbox');
+            let checkbox = document.querySelector(`.${checkboxClass}`);
+
+            formDiv.forEach((form) => {
+                form.style.display = "none";
+            });
+            ele.forEach((e) => {
+
+                e.style.display = "block";
+            })
+
+            formCheckbox.forEach((c) => {
+                c.checked = false;
+            })
+            checkbox.checked = true;
+            formCheckbox.forEach((x) => {
+                console.log(x.checked);
+            })
+            return;
+        }
+    </script>
+
+    <title>Contact Us | RTBanalytica</title>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/RTBanalytica-logo.png"/>
+</head>
+
+<body>
+   <app-header></app-header>
+
+        <div class="homepara-new">
+
+           
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="home-written-section">
+                            <!-- <h1>We are looking for<br> <span class="highlight-text">energetic and bold people <br></span><span class="small-highlight-text">to join us on our mission. </span>
+                                                                                </h1> -->
+                            <h1 class="highlight-text-one">This is start of something big</h1>                            
+                                <div class="contact-mail">
+                                    <div>
+                                        <h5>We’re here to help you make business decisions that are valuable and
+                                            validated by data. Drop a note to book an exclusive 30-minute meeting
+                                            with our expert to unlock true potential of your digital and data assets.
+                                            <a class="svg-arrow" href="#forms"><svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="30" height="30"
+                                                viewBox="0 0 172 172"
+                                                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0a81ab"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,37.9948 30.8052,68.8 68.8,68.8c37.9948,0 68.8,-30.8052 68.8,-68.8c0,-37.9948 -30.8052,-68.8 -68.8,-68.8zM107.25347,107.25347l-17.2,17.2c-1.118,1.118 -2.58573,1.67987 -4.05347,1.67987c-1.46773,0 -2.93547,-0.56187 -4.05347,-1.67987l-17.2,-17.2c-1.63973,-1.63973 -2.1328,-4.10507 -1.24413,-6.24933c0.88867,-2.14427 2.98133,-3.53747 5.2976,-3.53747h11.46667v-45.86667c0,-3.17053 2.56853,-5.73333 5.73333,-5.73333c3.1648,0 5.73333,2.5628 5.73333,5.73333v45.86667h11.46667c2.31627,0 4.40893,1.3932 5.2976,3.53747c0.88867,2.14427 0.3956,4.6096 -1.24413,6.24933z"></path></g></g></svg></a></h5> 
+                                    </div>
+                                
+                                        
+                                                                                                        
+                                </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <section class="new-section" id="forms" style="overflow: hidden;">
+        <div class="container">
+            <div class="form-head">
+                <h2 class="form-head-heading">I'm here to inquire about...</h2>
+                <div class="option-div">
+                    <select name="" id="" class="options" onchange="changeForm(event)">
+                        <option value="pub-form-div" id="publisher">Publisher</option>
+                        <option value="adv-form-div" id="advertiser">Advertiser</option>
+                        <option value="ana-form-div" id="analytics">Analytics & Data Science</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-div col-lg-12 col-md-12 col-sm-12 col-12">
+
+                <div id="pub" class="form-block" style="display: block;">
+
+                    <!-- <h2 class="form-heading-new pub-form-div form-div-block" style="display: block;" >Publisher</h2>
+                            <h2 class="form-heading-new adv-form-div form-div-block" style="display: none;" >Advertiser</h2>
+                            <h2 class="form-heading-new ana-form-div form-div-block" style="display: none;" >Analytics & Data Science</h2> -->
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://rtbanalytica.us1.list-manage.com/subscribe/post?u=d522aadb0afcf20bab556903d&amp;id=10ea57f527"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll container-fluid">
+                                <!-- <h2>Fill this form</h2> -->
+                                <div class="indicates-required">
+                                    <span class="asterisk">*</span>
+                                    indicates required
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL">Email Address
+                                                <span class="asterisk">*</span>
+                                            </label>
+                                            <input type="email" placeholder="Enter your mail id" value="" name="EMAIL"
+                                                class="required email" id="mce-EMAIL">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="mc-field-group">
+                                            <label for="mce-FNAME">Name
+                                            </label>
+                                            <input type="text" placeholder="Enter your name" value="" name="FNAME"
+                                                class="" id="mce-FNAME">
+                                        </div>
+                                    </div>
+                                    <div class="mc-field-group" style="display: none;">
+                                        <label for="mce-LNAME">Last Name
+                                        </label>
+                                        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="mc-field-group">
+                                            <label for="mce-MMERGE5">Country
+                                            </label>
+                                            <input type="text" placeholder="Enter your country" value="" name="MMERGE5"
+                                                class="" id="mce-MMERGE5">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 pub-form-div form-div-block">
+                                        <div class="mc-field-group pub-form-div form-div-block">
+                                            <label for="mce-MMERGE6">Monthly Traffic
+                                            </label>
+                                            <input type="text" placeholder="Enter monthly traffic" value=""
+                                                name="MMERGE6" class="" id="mce-MMERGE6">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12 ana-form-div adv-form-div form-div-block">
+                                        <div class="mc-field-group ana-form-div adv-form-div form-div-block"
+                                            style="display: none;">
+                                            <label for="mce-MMERGE7">Designation
+                                            </label>
+                                            <input type="text" placeholder="Enter your designation" value=""
+                                                name="MMERGE7" class="" id="mce-MMERGE7">
+                                        </div>
+                                    </div>
+                                    <div class="mc-field-group" style="display: none;">
+                                        <label for="mce-MMERGE8">Experience in Months
+                                        </label>
+                                        <input type="text" value="" name="MMERGE8" class="" id="mce-MMERGE8">
+                                    </div>
+                                    <div class="mc-field-group" style="display: none;">
+                                        <label for="mce-MMERGE9">Education
+                                        </label>
+                                        <input type="text" value="" name="MMERGE9" class="" id="mce-MMERGE9">
+                                    </div>
+                                    <div class="mc-field-group" style="display: none;">
+                                        <label for="mce-MMERGE11">Tools &amp; Software
+                                        </label>
+                                        <input type="text" value="" name="MMERGE11" class="" id="mce-MMERGE11">
+                                    </div>
+                                    <div class="mc-field-group" style="display: none;">
+                                        <label for="mce-MMERGE10">Current Firm/Organisation
+                                        </label>
+                                        <input type="text" value="" name="MMERGE10" class="" id="mce-MMERGE10">
+                                    </div>
+                                    <div class="mc-field-group" style="display: none;">
+                                        <label for="mce-MMERGE12">Current CTC
+                                        </label>
+                                        <input type="text" value="" name="MMERGE12" class="" id="mce-MMERGE12">
+                                    </div>
+                                    <div class="mc-field-group" style="display: none;">
+                                        <label for="mce-MMERGE13">Write Up
+                                        </label>
+                                        <input type="text" value="" name="MMERGE13" class="" id="mce-MMERGE13">
+                                    </div>
+                                    <div class="mc-field-group" style="display: none;">
+                                        <label for="mce-MMERGE15">Resume Link
+                                        </label>
+                                        <input type="url" value="" name="MMERGE15" class=" url" id="mce-MMERGE15">
+                                    </div>
+                                    <div class="mc-field-group input-group" style="display: none;">
+                                        <strong>Type
+                                        </strong>
+                                        <ul>
+                                            <li><input type="checkbox" value="1" class="pub-checkbox form-checkbox"
+                                                    checked name="group[381166][1]"
+                                                    id="mce-group[381166]-381166-0"><label
+                                                    for="mce-group[381166]-381166-0">Publisher</label>
+                                            </li>
+                                            <li><input type="checkbox" value="2" class="adv-checkbox form-checkbox"
+                                                    name="group[381166][2]" id="mce-group[381166]-381166-1"><label
+                                                    for="mce-group[381166]-381166-1">Advertiser</label>
+                                            </li>
+                                            <li><input type="checkbox" value="4" class="ana-checkbox form-checkbox"
+                                                    name="group[381166][4]" id="mce-group[381166]-381166-2"><label
+                                                    for="mce-group[381166]-381166-2">Analytics</label>
+                                            </li>
+                                            <li><input type="checkbox" value="8" name="group[381166][8]"
+                                                    id="mce-group[381166]-381166-3"><label
+                                                    for="mce-group[381166]-381166-3">Open Positions</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
+                                            type="text" name="b_d522aadb0afcf20bab556903d_10ea57f527" tabindex="-1"
+                                            value=""></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="clear"><input type="submit" value="Send Message" name="subscribe"
+                                                id="mc-embedded-subscribe" class="button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 open-job-box">
+                    <h4>Reach out for any query on</h4>
+                    <a href="mailto:analytics@rtbanalytica.com">
+                        analytics@rtbanalytica.com                       
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cities-section-one" style="overflow: hidden;">
+        <div class="container">
+            <h1 class="main-heading">Our Present Location</h1>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 image-section">
+                                <img src="../public/images/cities/indorenew.jpeg" class="img-responsive" width="554px"
+                                    height="410px" alt="">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 written-section">
+                              <div>
+                                <h2 class="heading">INDORE</h2>
+                                <p>4th Floor, 408 , Apollo Premier, Vijay Nagar, Indore (MP) - 452010</p>
+                              </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 order-sm-1 order-2 col-sm-12 col-12 written-section">
+                              <div>
+                                <h2 class="heading">BENGALURU</h2>
+                                <p>3302/D, 12th Main, A road Indira Nagar (560038)</p>
+                              </div>                                
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 order-sm-2 order-1 col-12 image-section image-section-diff">
+                                <img src="../public/images/cities/banglorenew.jpeg" class="img-responsive" width="554px"
+                                    height="402px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 image-section">
+                                <img src="../public/images/cities/menchesternew1.jpg" class="img-responsive"
+                                    width="554px" height="402px" alt="">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 written-section">
+                                <h2 class="heading">MANCHESTER</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <app-footer></app-footer>
+
+    <button type="button" class="btn btn-primary button d-none" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+     
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+
+        window.onload = () => {
+            
+            setInterval(()=>{
+                let p = document.querySelector("#mce-success-response");
+                if(p.innerHTML == "Thank you for subscribing!"){
+                    p.innerHTML = "Thank you for reaching out, we will get back to you in 48hours";
+                }
+            }, 100)
+                setTimeout(()=>{
+                window.open("#forms", "_self");
+            }, 3*1000)
+        }
+
+        $(function () {
+            function animationStart() {
+                $('#container').addClass('fin');
+            }
+            setTimeout(animationStart, 250);
+        });
+
+        (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+            fnames[5] = 'MMERGE5';
+            ftypes[5] = 'text';
+            fnames[6] = 'MMERGE6';
+            ftypes[6] = 'text';
+            fnames[7] = 'MMERGE7';
+            ftypes[7] = 'text';
+            fnames[3] = 'ADDRESS';
+            ftypes[3] = 'address';
+            fnames[4] = 'PHONE';
+            ftypes[4] = 'phone';
+            fnames[8] = 'MMERGE8';
+            ftypes[8] = 'text';
+            fnames[9] = 'MMERGE9';
+            ftypes[9] = 'text';
+            fnames[11] = 'MMERGE11';
+            ftypes[11] = 'text';
+            fnames[10] = 'MMERGE10';
+            ftypes[10] = 'text';
+            fnames[12] = 'MMERGE12';
+            ftypes[12] = 'text';
+            fnames[13] = 'MMERGE13';
+            ftypes[13] = 'text';
+            fnames[15] = 'MMERGE15';
+            ftypes[15] = 'url';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        function submit(e) {
+            alert("new")
+            e.preventDefault();
+            console.log(e.target.action, e.target);
+        }
+        let btns = document.querySelectorAll('input[type="button"]');
+        console.log("forms :", btns)
+        btns.forEach((btn) => {
+            btn.addEventListener('click', (e) => { // window.btn = e;
+                let form = document.querySelector(`.${e.target.dataset.form
+                    }`)
+                console.log(form);
+                let formData = new FormData(form);
+                let url = "https://cors-anywhere.herokuapp.com/" + form.dataset.action;
+                window.formData = formData;
+                console.log(formData, url);
+                let headers = { // "Access-Control-Allow-Origin": "https://127.0.0.1:8080"
+                    "Content-Type": "multipart/form-data"
+                };
+                fetch(url, {
+                    method: "POST",
+                    body: formData,
+                    headers
+                }).then(res => {
+                    console.log("response : ", res)
+                }).catch(err => {
+                    console.log("error : ", err)
+                })
+                let modal = document.querySelector('button.button');
+                console.log(modal)
+                modal.click();
+                // alert("new 2")
+                // e.preventDefault();
+
+            })
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- after body -->
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCD73QH" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<router-outlet></router-outlet>

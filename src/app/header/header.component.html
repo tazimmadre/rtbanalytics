@@ -1,0 +1,228 @@
+<head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    media="screen"
+    href="https://fontlibrary.org//face/glacial-indifference"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/assets/cookie.js"></script>
+  <!-- <script src="./../public/js/cookie.js"></script> -->
+  <title>About us | RTBanalytica</title>
+</head>
+<div class="alert text-center cookiealert" role="alert">
+  <b>Do you like cookies?</b>
+  &#x1F36A; We use cookies to ensure you get the best experience on our
+  website.
+  <a routerLink="/privacy" routerLinkActive="active">Learn more</a>
+
+  <button
+    type="button"
+    class="btn btn-primary btn-sm acceptcookies"
+    onclick="agree()"
+  >
+    I agree
+  </button>
+  <button
+    type="button"
+    class="btn btn-primary btn-sm closecookies"
+    onclick="disagree()"
+  >
+    I disagree
+  </button>
+</div>
+    <!-- Header -->
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand text-white logo" href="./index.html">
+          <div>
+            RTBAnalytica
+            <svg
+              xmlns="https://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewbox="0 0 172 172"
+              style="fill: #000000"
+            >
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g>
+                  <path
+                    d="M86,88.28438v-40.3125h18.8125v45.6875z"
+                    fill="#ffffff"
+                  ></path>
+                  <path
+                    d="M120.9375,88.28438v-67.1875h18.8125v59.125z"
+                    fill="#ffffff"
+                  ></path>
+                  <path
+                    d="M52.40625,77.53438v-9.40625h18.8125v13.4375z"
+                    fill="#ffffff"
+                  ></path>
+                  <path
+                    d="M166.49063,118.7875c-2.41875,-5.375 -9.00312,-7.525 -14.37812,-5.24063l-4.70312,2.01563l-0.94063,-1.88125c-2.28438,-5.50937 -8.6,-8.0625 -14.10937,-5.64375l-27.95,12.22812c-1.075,-1.74688 -2.6875,-3.09063 -4.70312,-4.03125l-34.66875,-15.5875c-13.4375,-6.04687 -29.15937,-4.16562 -40.85,4.8375l-5.24063,4.03125l-1.34375,1.34375v0v0c-9.00312,0 -16.25937,7.25625 -16.25937,16.25937v38.83438h16.125v-15.05l1.20938,-0.67187c4.43437,-2.55312 9.94375,-2.6875 14.5125,-0.40312l29.83125,14.91563c6.9875,3.35938 15.05,3.62812 22.30625,0.5375l75.7875,-31.98125c5.375,-2.41875 7.92812,-9.00313 5.375,-14.5125z"
+                    fill="#ffffff"
+                  ></path>
+                  <path
+                    d="M170.3875,117.57813c-1.47812,-3.62812 -4.43437,-6.45 -8.0625,-7.92813c-3.62812,-1.47812 -7.65937,-1.47812 -11.2875,0.13437l-1.6125,0.67188c-1.6125,-2.82187 -4.16562,-4.97187 -7.12187,-6.18125c-3.62813,-1.47812 -7.65938,-1.47812 -11.2875,0.13437l-15.5875,6.58438c-2.01562,0.80625 -2.95625,3.225 -2.15,5.24063c0.67188,1.47812 2.15,2.41875 3.7625,2.41875c0.5375,0 1.075,-0.13438 1.6125,-0.26875l15.5875,-6.58438c1.6125,-0.67187 3.49375,-0.67187 5.10625,0c1.075,0.40313 1.88125,1.075 2.55313,1.88125l-31.7125,13.30313c0.13437,-2.15 -0.13437,-4.3 -0.94062,-6.31562c-1.47813,-3.62813 -4.16563,-6.58438 -7.79375,-8.19688l-34.80312,-15.45312c-14.78125,-6.58437 -31.98125,-4.56875 -45.01562,5.375c-5.10625,4.16563 -8.19687,10.34688 -8.19687,17.06563v42.4625h-8.0625c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125c0,2.28438 1.74687,4.03125 4.03125,4.03125h12.09375c2.28438,0 4.03125,-1.74687 4.03125,-4.03125v-46.62812c0,-4.16563 1.88125,-8.19688 5.10625,-10.75c10.61563,-8.0625 24.59063,-9.675 36.81875,-4.3l34.66875,15.5875c1.6125,0.67188 2.95625,2.01563 3.49375,3.7625c0.67188,1.6125 0.5375,3.49375 -0.13437,5.10625c-0.67187,1.6125 -2.01562,2.82188 -3.62812,3.49375c-1.6125,0.67188 -3.49375,0.5375 -5.10625,-0.13437l-26.875,-11.95938c-2.01562,-0.94063 -4.43437,0 -5.375,2.01563c-0.94063,2.01563 0,4.43437 2.01563,5.375l26.875,11.95938c3.62812,1.6125 7.65937,1.74687 11.2875,0.26875c0.5375,-0.13438 1.075,-0.40313 1.47812,-0.67187c0.26875,0 0.40313,-0.13438 0.5375,-0.13438l51.33125,-21.76875c1.6125,-0.67187 3.49375,-0.67187 5.10625,0c1.6125,0.67188 2.95625,2.01563 3.62813,3.62812c0.67188,1.6125 0.67188,3.49375 0,5.10625c-0.67187,1.6125 -2.01562,2.95625 -3.62813,3.62812l-75.7875,31.98125c-6.04687,2.55313 -13.03437,2.41875 -18.94688,-0.5375l-31.98125,-15.5875c-2.01562,-0.94062 -4.43437,-0.13437 -5.375,1.88125c-0.94062,2.01563 -0.13438,4.43437 1.88125,5.375l31.98125,15.5875c4.3,2.15 8.86875,3.09063 13.57188,3.09063c4.03125,0 8.19688,-0.80625 12.09375,-2.41875l75.7875,-31.98125c3.62813,-1.47812 6.45,-4.43437 7.92812,-8.0625c1.6125,-3.62813 1.6125,-7.65938 0.13437,-11.2875z"
+                    fill="#000000"
+                  ></path>
+                  <path
+                    d="M104.8125,97.69063c-2.28437,0 -4.03125,-1.74687 -4.03125,-4.03125v-41.65625h-10.75v36.28125c0,2.28438 -1.74688,4.03125 -4.03125,4.03125c-2.28437,0 -4.03125,-1.74687 -4.03125,-4.03125v-40.3125c0,-2.28438 1.74688,-4.03125 4.03125,-4.03125h18.8125c2.28437,0 4.03125,1.74687 4.03125,4.03125v45.6875c0,2.15 -1.74688,4.03125 -4.03125,4.03125z"
+                    fill="#000000"
+                  ></path>
+                  <path
+                    d="M120.9375,92.31563c-2.28437,0 -4.03125,-1.74687 -4.03125,-4.03125v-67.1875c0,-2.28438 1.74688,-4.03125 4.03125,-4.03125h18.8125c2.28438,0 4.03125,1.74687 4.03125,4.03125v59.125c0,2.28438 -1.74687,4.03125 -4.03125,4.03125c-2.28438,0 -4.03125,-1.74687 -4.03125,-4.03125v-55.09375h-10.75v63.15625c0,2.15 -1.74688,4.03125 -4.03125,4.03125z"
+                    fill="#000000"
+                  ></path>
+                  <path
+                    d="M71.21875,85.59688c-2.28437,0 -4.03125,-1.74687 -4.03125,-4.03125v-9.40625h-10.75v5.375c0,2.28438 -1.74687,4.03125 -4.03125,4.03125c-2.28438,0 -4.03125,-1.74687 -4.03125,-4.03125v-9.40625c0,-2.28437 1.74687,-4.03125 4.03125,-4.03125h18.8125c2.28437,0 4.03125,1.74688 4.03125,4.03125v13.4375c0,2.15 -1.74688,4.03125 -4.03125,4.03125z"
+                    fill="#000000"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link navitem text-white" href="./index.html"
+                >Home<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                class="nav-link navitem text-white"
+                routerLink="/aboutus" routerLinkActive="active"
+                >About us</a
+                >
+                
+              </li>
+              <div class="dropdown">
+                <li class="nav-item specialdropdown">
+                  <a
+                    class="nav-link navitem text-white"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    href="#"
+                    >Offerrings<i class="fa fa-angle-down"></i
+                  ></a>
+                </li>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a
+                    class="dropdown-item"
+                    href="./pages/offerrings/analytics-and-ds.html"
+                    >Analytics & Data Science</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="./pages/offerrings/publishers.html"
+                    >Publishers</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="./pages/offerrings/advertisers.html"
+                    >Advertisers</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="./adunits/index.html"
+                    >Innovative Adunits</a
+                  >
+                </div>
+              </div>
+              <li class="nav-item">
+                <a
+                  class="nav-link navitem special-nav text-white"
+                  routerLink="/careers" routerLinkActive="active"
+                  >Careers</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link navitem special-nav text-white"
+                  routerLink="/contactus" routerLinkActive="active"
+                  >Contact us</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                <button
+                  class="nav-link navitem special-nav"
+                  routerLink="/login" routerLinkActive="active"
+                  >Sign in</button
+                >
+              </li> -->
+              <!-- <button class="btn btn-outline-success sign-in-special-btn my-2 my-sm-0" type="submit"><a href="">Sign in</a></button> -->
+              <div class="sign-in-special-btn"><a routerLink="/login" routerLinkActive="active">Sign in</a></div>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </div>
